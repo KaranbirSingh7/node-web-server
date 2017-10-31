@@ -2,6 +2,8 @@ const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
 
+const port = process.env.PORT || 3000;
+
 var app = express();
 
 // maintainence page, needed when server is down
@@ -52,6 +54,6 @@ app.get('/bad',(req, res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log('\n-----\nServer is up on PORT:3000\n------\n');
+app.listen(port, () => {
+    console.log(`\n-----\nServer is up on PORT:${port}\n------\n`);
 });
