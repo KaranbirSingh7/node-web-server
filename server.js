@@ -11,7 +11,7 @@ var app = express();
 
 
 //Register partial parts such as header,footer etc. for handleBar views
-hbs.registerPartials(__dirname+'/public/partials'); 
+hbs.registerPartials(__dirname+'/views/partials'); 
 //Register functions to use in HBS
 hbs.registerHelper('getDate', () => new Date());
 //Set web engine to handleBars
