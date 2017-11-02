@@ -11,7 +11,6 @@ var app = express();
 //     res.render('maintenance.hbs');
 // })
 
-
 //Register partial parts such as header,footer etc. for handleBar views
 hbs.registerPartials(__dirname+'/views/partials'); 
 //Register functions to use in HBS
