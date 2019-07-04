@@ -5,12 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Karanbir Singh",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.2",
-    "hbs": "^4.0.1"
-  }
+    "hbs": "^4.0.1",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
